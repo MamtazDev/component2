@@ -56,7 +56,7 @@ export default function ProjectBranch() {
   };
   return (
     <>
-      <div className="component">
+      <div className="component set_border_2_grey">
         <div onClick={() => setShow(!show)} className="title">
           <p>
           Project Branch

@@ -26,8 +26,8 @@ const Page2 = () => {
         <button className="submit_btn">Submit</button>
         <div className="circle_yellow_buttons">
           <div className="inactive_yellow_circle"></div>
-          <div className="active_yellow_circle"></div>
           <div className="inactive_yellow_circle"></div>
+          <div className="active_yellow_circle"></div>
         </div>
       </div>
     </>
