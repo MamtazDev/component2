@@ -54,8 +54,7 @@ const DeveloperDetails = ({ title, project }) => {
     } else {
       setShowSkills(false);
     }
-  };
-
+  }
   return (
     <div className="container projects__body__container__left__card">
       <div className="projects__body__container__left__card__top">

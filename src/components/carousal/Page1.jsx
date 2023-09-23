@@ -6,12 +6,16 @@ import ProjectName from "./ProjectName";
 import ProjectExperience from "./ProjectExperience";
 import AreaOfExperties from "./AreaOfExperties";
 import rightarrow from "../../icons/right.png";
+import { Link } from "react-router-dom";
 const Page1 = () => {
   return (
     <div>
       <div className="right_arrow_div">
         <button className="arrow_btn">
-          <img src={rightarrow} alt="" />
+          <Link to="/project2">
+            {" "}
+            <img src={rightarrow} alt="" />
+          </Link>
         </button>
       </div>
       <div className="page1_component">
@@ -24,7 +28,7 @@ const Page1 = () => {
           <AreaOfExperties />
         </div>
       </div>
-      <button className="submit_btn">submit</button>
+      <button className="submit_btn">Submit</button>
       <div className="circle_yellow_buttons">
         <div className="active_yellow_circle"></div>
         <div className="inactive_yellow_circle"></div>

@@ -1,23 +1,19 @@
-import TeammatesDetails from "./TeammatesDetails";
-import { Route, BrowserRouter as Router } from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import './App.css';
-import Finapp from './Finapp';
-import Neuroni from "./Neuroni";
-import Lawai from "./Lawai";
 import Page1 from "./components/carousal/Page1";
+import Home from "./components/carousal/Home";
+import Page2 from "./components/carousal/Page2";
+import Page3 from "./components/carousal/Page3";
 
 function App() {
   return (
     <Router>
-      <div className="App">
-        {/* <TeammatesDetails title={"Projects"} />
-        <Finapp title={"Projects"} />
-
-        <Neuroni title={"Projects"} />
-        <Lawai title={"Projects"} /> */}
-        <Page1 />
-      </div>
-      {/* <Route element={Paf}></Route> */}
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/project" element={<Page1 />}></Route>
+        <Route path="/project2" element={<Page2 />}></Route>
+        <Route path="/project3" element={<Page3 />}></Route>
+      </Routes>
     </Router>
 
   );
