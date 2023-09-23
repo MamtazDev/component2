@@ -10,14 +10,14 @@ const Page2 = () => {
   return (
     <>
       <div>
-        <div className="right_arrow_div">
+        <div className="right_arrow_div2">
           <button className="arrow_btn">
             <Link to="/project3">
               <img src={rightarrow} alt="" />
             </Link>
           </button>
         </div>
-        <div className="left_arrow_div">
+        <div className="left_arrow_div2">
           <button className="arrow_btn">
             <Link to="/project">
               <img src={leftarrow} alt="" />
@@ -32,11 +32,13 @@ const Page2 = () => {
             <OfferedWorkingType />
           </div>
         </div>
-        <button className="submit_btn">Submit</button>
-        <div className="circle_yellow_buttons">
-          <div className="inactive_yellow_circle"></div>
-          <div className="active_yellow_circle"></div>
-          <div className="inactive_yellow_circle"></div>
+        <div className="buttons_container2">
+          <button className="submit_btn">Submit</button>
+          <div className="circle_yellow_buttons">
+            <div className="inactive_yellow_circle"></div>
+            <div className="active_yellow_circle"></div>
+            <div className="inactive_yellow_circle"></div>
+          </div>
         </div>
       </div>
     </>

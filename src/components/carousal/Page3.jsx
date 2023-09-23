@@ -23,11 +23,13 @@ const Page2 = () => {
             <Availability />
           </div>
         </div>
-        <button className="submit_btn">Submit</button>
-        <div className="circle_yellow_buttons">
-          <div className="inactive_yellow_circle"></div>
-          <div className="inactive_yellow_circle"></div>
-          <div className="active_yellow_circle"></div>
+        <div className="buttons_container">
+          <button className="submit_btn">Submit</button>
+          <div className="circle_yellow_buttons">
+            <div className="inactive_yellow_circle"></div>
+            <div className="inactive_yellow_circle"></div>
+            <div className="active_yellow_circle"></div>
+          </div>
         </div>
       </div>
     </>

@@ -16,7 +16,7 @@ p {
 }
 
 .right_arrow_div {
-    width: 65px;
+    max-width: 65px;
     height: 133px;
     display: flex !important;
     justify-content: end !important;
@@ -26,8 +26,20 @@ p {
     top: 40%;
 }
 
+.right_arrow_div2 {
+    max-width: 65px;
+    height: 133px;
+    display: flex !important;
+    justify-content: end !important;
+    align-items: center;
+    position: absolute;
+    right: 20%;
+    top: 40%;
+}
+
+
 .left_arrow_div {
-    width: 65px;
+    max-width: 65px;
     height: 133px;
     display: flex !important;
     justify-content: start !important;
@@ -36,6 +48,18 @@ p {
     left: 20%;
     top: 40%;
 }
+
+.left_arrow_div2 {
+    max-width: 65px;
+    height: 133px;
+    display: flex !important;
+    justify-content: start !important;
+    align-items: center;
+    position: absolute;
+    left: 20%;
+    top: 40%;
+}
+
 
 .arrow_btn {
     background-color: transparent;
@@ -138,14 +162,13 @@ p {
 
 
 .component {
-    max-width: 400px;
+    max-width: 400px !important;
     background: #FFF;
     padding: 13px;
-    /* margin: 25px auto; */
     border-radius: 10px;
     background: #FFF;
     z-index: 9999999999999999999999 !important;
-    margin: 25px auto 0px auto!important;
+    margin: 25px auto 0px auto !important;
 }
 
 .search_field {
@@ -555,29 +578,3 @@ p {
     padding: 0;
 }
 
-::-webkit-scrollbar {
-    width: 8px;
-    height: 30px !important;
-}
-
-::-webkit-scrollbar-thumb {
-    background: rgba(94, 110, 120, 0.40);
-    border-radius: 4px;
-    height: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: white;
-}
-
-.scroll_bar {
-    overflow-y: scroll !important;
-    max-height: 300px;
-
-}
-
-.scrol_bar_3 {
-    overflow-y: scroll !important;
-    max-height: 150px;
-    overflow-x: hidden;
-}

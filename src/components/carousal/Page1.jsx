@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 const Page1 = () => {
   return (
     <div>
-      <div className="right_arrow_div">
+      <div className="right_arrow_div page1">
         <button className="arrow_btn">
           <Link to="/project2">
             {" "}
@@ -28,11 +28,15 @@ const Page1 = () => {
           <AreaOfExperties />
         </div>
       </div>
-      <button className="submit_btn">Submit</button>
-      <div className="circle_yellow_buttons">
-        <div className="active_yellow_circle"></div>
-        <div className="inactive_yellow_circle"></div>
-        <div className="inactive_yellow_circle"></div>
+      <div className="buttons_container1">
+        <div>
+          <button className="submit_btn">Submit</button>
+          <div className="circle_yellow_buttons">
+            <div className="active_yellow_circle"></div>
+            <div className="inactive_yellow_circle"></div>
+            <div className="inactive_yellow_circle"></div>
+          </div>
+        </div>
       </div>
     </div>
   );
