@@ -427,15 +427,20 @@ input[type="number"] {
 }
 
 .projects__body__container__left__card__top__iconsBox__write {
-  border: 1px solid lightgray !important;
-  font-size: 14px !important;
-  text-transform: capitalize !important;
-  color: gray !important;
+  border-radius: 7px !important;
+  border: 1px solid rgba(94, 110, 120, 0.40) !important;
   margin-right: 0.5rem !important;
-  font-weight: 600 !important;
-  max-width: 134.349px;
   height: 39px !important;
-  padding: 11px 13px;
+  padding: 11px 13px !important;
+
+  color: #5E6E78 !important;
+  font-family: Montserrat;
+  font-size: 14px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: 17px;
+  /* 121.429% */
+
 }
 
 .projects__body__container__left__card__top__iconsBox__write__icon {
@@ -452,17 +457,18 @@ input[type="number"] {
   max-width: 119.954px;
   padding: 11px 13px;
   font-weight: 600 !important;
-  border-radius: 7px;
+  border-radius: 7px !important;
   border: 1px solid rgba(51, 128, 255, 0.40) !important;
 }
 
 .projects__body__container__left__card__top__iconsBox__add__icon {
   /* font-size: 0.8rem !important; */
   margin-left: 0.2rem;
-  color: rgba(51, 128, 255, 0.40) !important;
+  /* color: rgba(51, 128, 255, 0.40) !important; */
   font-weight: 600 !important;
   width: 12px;
   height: 12px;
+  fill: #3380FF !important;
 }
 
 .projects__body__container__left__card__top__iconsBox__edit {
@@ -557,6 +563,7 @@ input[type="number"] {
   flex-wrap: wrap;
   border-top: 1px solid lightgray;
   padding-top: 1rem;
+  gap: 30px;
 }
 
 .projects__body__container__left__card__body2__specs {
@@ -570,7 +577,8 @@ input[type="number"] {
 }
 
 .projects__body__container__left__card__body2__specs__desc {
-  margin-top: 0.3rem;
+  margin-top: 18px;
+  
 }
 
 .projects__body__container__left__card__body2__specs__desc span {
@@ -579,7 +587,7 @@ input[type="number"] {
   padding: 0.1rem 0.5rem;
   font-size: 0.7rem;
   font-weight: 600;
-  margin-right: 0.3rem;
+  /* margin-right: 0.3rem; */
   color: gray;
 }
 

@@ -36,15 +36,15 @@ var sectorExperienceDisplayNumber = 2;
 var personalAssetsList = ["Public Speaking", "Creativity"];
 var personalAssetsDisplayNumber = 2;
 
-var acceptedDeadline = [20, 50];
+var acceptedDeadline = [20, 26];
 
-var location = ["Warsaw", "Poland"];
+var location = ["Japan", ""];
 
-var bizOrTech = [10, 90];
+var bizOrTech = [20, 80];
 
-var availability = [8, 40];
+var availability = [8, 16];
 
-const DeveloperDetails = ({ title, project }) => {
+const Neuroni = ({ title, project }) => {
   const [showSkills, setShowSkills] = useState(false);
   const navigate = useNavigate();
 
@@ -59,7 +59,7 @@ const DeveloperDetails = ({ title, project }) => {
   return (
     <div className="container projects__body__container__left__card">
       <div className="projects__body__container__left__card__top">
-        <h4>Automotive AI</h4>
+        <h4>Neuroni</h4>
         <div className="projects__body__container__left__card__top__iconsBox">
           {title === "My Projects" ? (
             <></>
@@ -72,12 +72,12 @@ const DeveloperDetails = ({ title, project }) => {
               <ModeEditOutlineOutlinedIcon className="projects__body__container__left__card__top__iconsBox__write__icon" />
             </Button>
           )}
-          {title === "Projects" && (
-            <Button className="projects__body__container__left__card__top__iconsBox__add">
-              Save
-              <AddOutlinedIcon className="projects__body__container__left__card__top__iconsBox__add__icon" />
-            </Button>
-          )}
+          {/* {title === "Projects" && ( */}
+          <Button className="projects__body__container__left__card__top__iconsBox__add">
+            Save
+            <AddOutlinedIcon className="projects__body__container__left__card__top__iconsBox__add__icon" />
+          </Button>
+          {/* //   )} */}
           {title === "My Projects" && (
             <>
               <Button className="projects__body__container__left__card__top__iconsBox__edit">
@@ -272,7 +272,7 @@ const DeveloperDetails = ({ title, project }) => {
           </div>
 
           <div className="projects__body__container__left__card__body2__specs">
-            <p>Personal Assets</p>
+            <p>Sought personal assets</p>
             <div className="projects__body__container__left__card__body2__specs__desc">
               <div className="projects__body__container__left__card__body__specs__desc">
                 {personalAssetsList
@@ -285,7 +285,7 @@ const DeveloperDetails = ({ title, project }) => {
           </div>
 
           <div className="projects__body__container__left__card__body2__specs">
-            <p>Accepted Deadline</p>
+            <p>Project deadline</p>
             <div className="projects__body__container__left__card__body2__specs__desc">
               <span style={{ display: "inline-block" }}>
                 {acceptedDeadline[0]}
@@ -313,31 +313,33 @@ const DeveloperDetails = ({ title, project }) => {
           </div>
 
           <div className="projects__body__container__left__card__body2__specs">
-            <p>Biz or Tech</p>
+            <p>Biz or tech position</p>
             <div className="projects__body__container__left__card__body2__specs__desc">
               <span
                 style={{
                   backgroundColor: "transparent",
                   display: "inline-block",
+                  maxWidth: "76px",
                 }}
               >
-                bizLike
+                Business like
               </span>
               <span style={{ display: "inline-block" }}>{bizOrTech[0]}%</span>
               <span
                 style={{
                   backgroundColor: "transparent",
                   display: "inline-block",
+                  maxWidth: "76px",
                 }}
               >
-                techLike
+                Technical like
               </span>
               <span style={{ display: "inline-block" }}>{bizOrTech[1]}%</span>
             </div>
           </div>
 
           <div className="projects__body__container__left__card__body2__specs">
-            <p>Availability</p>
+            <p>sought availability</p>
             <div className="projects__body__container__left__card__body2__specs__desc">
               <span style={{ display: "inline-block" }}>{availability[0]}</span>
               <span
@@ -356,17 +358,15 @@ const DeveloperDetails = ({ title, project }) => {
                   display: "inline-block",
                 }}
               >
-                h/week
+                hours weekly
               </span>
             </div>
           </div>
 
           <div className="projects__body__container__left__card__body2__specs">
-            <p>Location</p>
+            <p>project base location</p>
             <div className="projects__body__container__left__card__body2__specs__desc">
-              <span>
-                {location[0]}, {location[1]}
-              </span>
+              <span>{location[0]}</span>
             </div>
           </div>
         </div>
@@ -399,10 +399,10 @@ const DeveloperDetails = ({ title, project }) => {
                 <TipsAndUpdatesIcon className="projects__body__container__left__card__bottom__left__tip__icon" />
               </p>
               <span className="projects__body__container__left__card__bottom__left__type">
-                Automotive
+                Neuroscience
               </span>
               <span className="projects__body__container__left__card__bottom__left__type">
-                Start-Up
+                For Fun
               </span>
             </>
           )}
@@ -410,10 +410,10 @@ const DeveloperDetails = ({ title, project }) => {
             <>
               <p className="projects__body__container__left__card__bottom__left__tip">
                 <TipsAndUpdatesIcon className="projects__body__container__left__card__bottom__left__tip__icon" />
-                Automotive
+                Neuroscience
               </p>
               <span className="projects__body__container__left__card__bottom__left__type">
-                Start-Up
+                For Fun
               </span>
             </>
           )}
@@ -436,4 +436,4 @@ const DeveloperDetails = ({ title, project }) => {
   );
 };
 
-export default DeveloperDetails;
+export default Neuroni;
