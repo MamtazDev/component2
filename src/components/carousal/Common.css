@@ -149,6 +149,10 @@ p {
     background-color: #f3b85a;
 }
 
+.submit_btn:focus {
+    background-color: #f3b85a;
+}
+
 .page1_component {
     margin-top: 9% !important;
     gap: 25px 0px !important;
@@ -166,7 +170,7 @@ p {
 }
 
 .page3_component {
-    margin-top: 16% !important;
+    margin-top: 12% !important;
     gap: 25px 0px !important;
     height: auto !important;
     max-width: 400px;
@@ -625,11 +629,13 @@ p {
     visibility: hidden;
     opacity: 0;
 }
-.page3_left_icon{
+
+.page3_left_icon {
     text-align: end;
     visibility: hidden;
     opacity: 0;
 }
+
 @media(max-width:768px) {
     .projects__body__container__left__card__body {
         margin-top: 30px !important;
@@ -663,12 +669,17 @@ p {
         visibility: hidden;
         opacity: 0;
     }
-    .page3_left_icon{
+
+    .page3_left_icon {
         visibility: visible;
         opacity: 1;
     }
-    .desktop_icons{
+
+    .desktop_icons {
         visibility: hidden;
         opacity: 0;
+    }
+    .arrow_btn img {
+        width: 40%;
     }
 }
