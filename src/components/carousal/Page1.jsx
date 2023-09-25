@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 const Page1 = () => {
   return (
     <div >
-      <div className="right_arrow_div page1">
+      <div className="right_arrow_div page1 desktop_right_arrow">
         <button className="arrow_btn">
           <Link to="/project2">
             {" "}
@@ -18,7 +18,15 @@ const Page1 = () => {
           </Link>
         </button>
       </div>
-      <div className="page1_component" >
+      <div className="page1_component " >
+      <div className="mobile_device" style={{textAlign:"right"}}>
+        <button className="arrow_btn">
+          <Link to="/project2">
+            {" "}
+            <img src={rightarrow} alt="" />
+          </Link>
+        </button>
+      </div>
         <div>
           <ProjectName />
           <Component />
@@ -28,14 +36,6 @@ const Page1 = () => {
           <AreaOfExperties />
         </div>
       </div>
-      {/*       <div className="right_arrow_div_mobile ">
-        <button className="arrow_btn">
-          <Link to="/project2">
-            {" "}
-            <img src={rightarrow} alt="" />
-          </Link>
-        </button>
-      </div> */}
       <div className="buttons_container">
         <div>
           <button className="submit_btn">Submit</button>

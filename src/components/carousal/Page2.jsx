@@ -10,7 +10,7 @@ const Page2 = () => {
   return (
     <>
       <div>
-        <div className="left_right_container_page2">
+        <div className="left_right_container_page2 page2_icons_desktop">
           <div className="right_arrow_div2">
             <button className="arrow_btn">
               <Link to="/project3">
@@ -26,30 +26,34 @@ const Page2 = () => {
             </button>
           </div>
         </div>
+
+        {/* icons */}
         <div className="page2_component">
-          <div className="page2_container">
+          <div className="">
+            <div className=" page2_icons_mobile">
+              <div className="">
+                <button className="arrow_btn">
+                  <Link to="/project">
+                    <img src={leftarrow} alt="" />
+                  </Link>
+                </button>
+              </div>
+              <div className="">
+                <button className="arrow_btn">
+                  <Link to="/project3">
+                    <img src={rightarrow} alt="" />
+                  </Link>
+                </button>
+              </div>
+            </div>
+
             <ProjectDeadline />
             <ProjectBranch />
             <ProjectDeadline />
             <OfferedWorkingType />
           </div>
         </div>
-        {/*   <div className="left_right_container_page2_mobile">
-          <div className="right_arrow_div2">
-            <button className="arrow_btn">
-              <Link to="/project3">
-                <img src={rightarrow} alt="" />
-              </Link>
-            </button>
-          </div>
-          <div className="left_arrow_div2">
-            <button className="arrow_btn">
-              <Link to="/project">
-                <img src={leftarrow} alt="" />
-              </Link>
-            </button>
-          </div>
-        </div> */}
+
         <div className="buttons_container">
           <button className="submit_btn1">Submit</button>
           <div className="circle_yellow_buttons">

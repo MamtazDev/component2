@@ -9,7 +9,7 @@ const Page2 = () => {
   return (
     <>
       <div>
-        <div className="left_arrow_div">
+        <div className="left_arrow_div desktop_icons">
           <button className="arrow_btn">
             <Link to="/project2">
               <img src={leftarrow} alt="" />
@@ -18,6 +18,17 @@ const Page2 = () => {
         </div>
         <div className="page3_component">
           <div className="page2_container">
+
+          <div className="page3_left_icon">
+          <button className="arrow_btn">
+            <Link to="/project2">
+              <img src={leftarrow} alt="" />
+            </Link>
+          </button>
+        </div>
+
+
+
             <UsedLanguages />
             <BizOrTechRole />
             <Availability />
