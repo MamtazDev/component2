@@ -6,7 +6,7 @@ import Neuroni from "../../Neuroni";
 import { Link } from "react-router-dom";
 const Home = () => {
   return (
-    <div>
+    <div className="home_margin">
       <TeammatesDetails title={"Projects"} />
       <Finapp title={"Projects"} />
       <Neuroni title={"Projects"} />

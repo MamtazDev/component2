@@ -8,10 +8,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.home_margin{
+  margin: 100px !important;
+}
 .container {
   max-width: 1577px !important;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -231,4 +234,23 @@ code {
   opacity: 1;
 }
 
+.small_visible {
+  display: none;
+}
 
+@media (max-width:768px) {
+  .small_none {
+    display: none;
+  }
+
+  .small_visible {
+    display: block;
+  }
+
+  .projects__body__container__left__card__body2__specs__desc {
+    margin-top: 4px !important;
+  }
+  .home_margin{
+    margin: 0px !important;
+  }
+}

@@ -54,7 +54,7 @@ const DeveloperDetails = ({ title, project }) => {
     } else {
       setShowSkills(false);
     }
-  }
+  };
   return (
     <div className="container projects__body__container__left__card">
       <div className="projects__body__container__left__card__top">
@@ -129,7 +129,6 @@ const DeveloperDetails = ({ title, project }) => {
             </div>
           </div>
         </div>
-
         <div className="projects__body__container__left__card__body__specs yellow_parent">
           <div className="question_parent">
             <p className="header_p"> sought tools and mep</p>
@@ -165,7 +164,7 @@ const DeveloperDetails = ({ title, project }) => {
             </div>
           </div>
         </div>
-        <div className="projects__body__container__left__card__body__specs yellow_parent">
+        <div className="projects__body__container__left__card__body__specs yellow_parent small_none">
           <div className="question_parent1">
             <p className="header_p">sought PTE</p>
             <div className="question_hover">
@@ -192,7 +191,7 @@ const DeveloperDetails = ({ title, project }) => {
             </div>
           </div>
         </div>
-        <div className="projects__body__container__left__card__body__specs">
+        <div className="projects__body__container__left__card__body__specs small_none">
           <p className="header_p">offered gratification</p>
           <div
             className="projects__body__container__left__card__body__specs__desc"
@@ -231,7 +230,7 @@ const DeveloperDetails = ({ title, project }) => {
             </div>
           </div>
         </div>
-        <div className="projects__body__container__left__card__body__specs">
+        <div className="projects__body__container__left__card__body__specs small_none">
           <p className="header_p">offered Working type</p>
           <div
             className="projects__body__container__left__card__body__specs__desc"
@@ -241,7 +240,7 @@ const DeveloperDetails = ({ title, project }) => {
             <span style={{ display: "inline-block" }}>Remote</span>
           </div>
         </div>
-        <div className="projects__body__container__left__card__body__specs">
+        <div className="projects__body__container__left__card__body__specs small_none">
           <p className="header_p">USED Languages</p>
           <div
             className="projects__body__container__left__card__body__specs__desc"
@@ -255,6 +254,99 @@ const DeveloperDetails = ({ title, project }) => {
       {/* EXTENDED FEATURES ROW */}
       {showSkills === true && (
         <div className="projects__body__container__left__card__body2">
+         
+         {/* without exted data */}
+         <div className="projects__body__container__left__card__body__specs yellow_parent small_visible" style={{marginTop:"8px"}}>
+          <div className="question_parent1">
+            <p className="header_p">sought PTE</p>
+            <div className="question_hover">
+              <img className="question_image1" src={question} alt="" />
+              <div className="yellow_text1">
+                <p>Project Type Experience</p>
+              </div>
+            </div>
+          </div>
+          <div className="projects__body__container__left__card__body__specs__desc">
+            {pteList.slice(0, pteDisplayNumber).map((i, index) => (
+              <span key={index}>{i}</span>
+            ))}
+          </div>
+          <div className="dot_container">
+            <div className="dot_hover">
+              <div className="dot_image">
+                <img src={dots} alt="" />
+              </div>
+              <div className="dot_hover_element flex_items">
+                <small>Corporate</small>
+                <small>Learning</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="projects__body__container__left__card__body__specs small_visible">
+          <p className="header_p">offered gratification</p>
+          <div
+            className="projects__body__container__left__card__body__specs__desc"
+            style={{ display: "inline-block" }}
+          >
+            <span style={{ display: "inline-block" }}>
+              {gratificationAcceptList[0]}
+            </span>
+            <span style={{ display: "inline-block" }}>
+              {gratificationAcceptList[1]}
+            </span>
+            <span
+              style={{
+                display: "inline-block",
+                backgroundColor: "transparent",
+              }}
+            >
+              for
+            </span>
+            <span style={{ display: "inline-block" }}>
+              {gratificationForList[0]}
+            </span>
+            <span style={{ display: "inline-block" }}>
+              {gratificationForList[1]}
+            </span>
+          </div>
+          <div className="dot_container">
+            <div className="dot_hover">
+              <div className="dot_image">
+                <img src={dots} alt="" />
+              </div>
+              <div className="dot_hover_element flex_items">
+                <small>Sold Product</small>
+                <small>For Fun</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="projects__body__container__left__card__body__specs small_visible">
+          <p className="header_p">offered Working type</p>
+          <div
+            className="projects__body__container__left__card__body__specs__desc"
+            style={{ display: "inline-block" }}
+          >
+            <span style={{ display: "inline-block" }}>Office</span>
+            <span style={{ display: "inline-block" }}>Remote</span>
+          </div>
+        </div>
+        <div className="projects__body__container__left__card__body__specs small_visible">
+          <p className="header_p">USED Languages</p>
+          <div
+            className="projects__body__container__left__card__body__specs__desc"
+            style={{ display: "inline-block" }}
+          >
+            <span style={{ display: "inline-block" }}>English</span>
+            <span style={{ display: "inline-block" }}>Polish</span>
+          </div>
+        </div>
+         {/* without exted data */}
+
+
+
+          {/* main content */}
           <div className="projects__body__container__left__card__body2__specs">
             <p>Sector Experience</p>
             <div className="projects__body__container__left__card__body2__specs__desc">

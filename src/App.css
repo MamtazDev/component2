@@ -508,7 +508,7 @@ input[type="number"] {
 
 .projects__body__container__left__card__body__specs {
   margin-right: 30px;
-  margin-bottom: 0.5rem;
+  margin-bottom: 20px;
 }
 
 .projects__body__container__left__card__body__specs p {
@@ -549,7 +549,7 @@ input[type="number"] {
 }
 
 .projects__body__container__left__card__body__specs__desc .flag_design {
-  background-color: #EFF0F1;
+  background: rgba(94, 110, 120, 0.10);
   color: gray;
   margin-top: 0px;
   border-radius: 0.5rem;
@@ -563,11 +563,11 @@ input[type="number"] {
   flex-wrap: wrap;
   border-top: 1px solid lightgray;
   padding-top: 1rem;
-  gap: 30px;
+  gap: 0px;
 }
 
 .projects__body__container__left__card__body2__specs {
-  margin-right: 1rem;
+  margin-right: 30px !important;
   margin-bottom: 1rem;
 }
 
@@ -578,7 +578,7 @@ input[type="number"] {
 
 .projects__body__container__left__card__body2__specs__desc {
   margin-top: 18px;
-  
+
 }
 
 .projects__body__container__left__card__body2__specs__desc span {
@@ -888,7 +888,7 @@ input[type="number"] {
   }
 
   .projects__body__container__left__card__body__specs {
-    margin-bottom: 2.5rem;
+    /* margin-bottom: 2.5rem; */
   }
 }
 
@@ -910,8 +910,8 @@ input[type="number"] {
   .addProject__container__totalExp__main__box {
     flex-wrap: wrap;
   }
-  
-    
+
+
 }
 
 .addProject__container__totalExp__main__box__total {

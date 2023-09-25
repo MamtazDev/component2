@@ -130,7 +130,6 @@ const Finapp = ({ title, project }) => {
             </div>
           </div>
         </div>
-
         <div className="projects__body__container__left__card__body__specs yellow_parent">
           <div className="question_parent">
             <p className="header_p"> sought tools and mep</p>
@@ -166,7 +165,7 @@ const Finapp = ({ title, project }) => {
             </div>
           </div>
         </div>
-        <div className="projects__body__container__left__card__body__specs yellow_parent">
+        <div className="projects__body__container__left__card__body__specs yellow_parent small_none">
           <div className="question_parent1">
             <p className="header_p">sought PTE</p>
             <div className="question_hover">
@@ -193,7 +192,7 @@ const Finapp = ({ title, project }) => {
             </div>
           </div>
         </div>
-        <div className="projects__body__container__left__card__body__specs">
+        <div className="projects__body__container__left__card__body__specs small_none">
           <p className="header_p">offered gratification</p>
           <div
             className="projects__body__container__left__card__body__specs__desc"
@@ -232,7 +231,7 @@ const Finapp = ({ title, project }) => {
             </div>
           </div>
         </div>
-        <div className="projects__body__container__left__card__body__specs">
+        <div className="projects__body__container__left__card__body__specs small_none">
           <p className="header_p">offered Working type</p>
           <div
             className="projects__body__container__left__card__body__specs__desc"
@@ -242,7 +241,7 @@ const Finapp = ({ title, project }) => {
             <span style={{ display: "inline-block" }}>Remote</span>
           </div>
         </div>
-        <div className="projects__body__container__left__card__body__specs">
+        <div className="projects__body__container__left__card__body__specs small_none">
           <p className="header_p">USED Languages</p>
           <div
             className="projects__body__container__left__card__body__specs__desc"
@@ -256,6 +255,99 @@ const Finapp = ({ title, project }) => {
       {/* EXTENDED FEATURES ROW */}
       {showSkills === true && (
         <div className="projects__body__container__left__card__body2">
+         
+         {/* without exted data */}
+         <div className="projects__body__container__left__card__body__specs yellow_parent small_visible" style={{marginTop:"8px"}}>
+          <div className="question_parent1">
+            <p className="header_p">sought PTE</p>
+            <div className="question_hover">
+              <img className="question_image1" src={question} alt="" />
+              <div className="yellow_text1">
+                <p>Project Type Experience</p>
+              </div>
+            </div>
+          </div>
+          <div className="projects__body__container__left__card__body__specs__desc">
+            {pteList.slice(0, pteDisplayNumber).map((i, index) => (
+              <span key={index}>{i}</span>
+            ))}
+          </div>
+          <div className="dot_container">
+            <div className="dot_hover">
+              <div className="dot_image">
+                <img src={dots} alt="" />
+              </div>
+              <div className="dot_hover_element flex_items">
+                <small>Corporate</small>
+                <small>Learning</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="projects__body__container__left__card__body__specs small_visible">
+          <p className="header_p">offered gratification</p>
+          <div
+            className="projects__body__container__left__card__body__specs__desc"
+            style={{ display: "inline-block" }}
+          >
+            <span style={{ display: "inline-block" }}>
+              {gratificationAcceptList[0]}
+            </span>
+            <span style={{ display: "inline-block" }}>
+              {gratificationAcceptList[1]}
+            </span>
+            <span
+              style={{
+                display: "inline-block",
+                backgroundColor: "transparent",
+              }}
+            >
+              for
+            </span>
+            <span style={{ display: "inline-block" }}>
+              {gratificationForList[0]}
+            </span>
+            <span style={{ display: "inline-block" }}>
+              {gratificationForList[1]}
+            </span>
+          </div>
+          <div className="dot_container">
+            <div className="dot_hover">
+              <div className="dot_image">
+                <img src={dots} alt="" />
+              </div>
+              <div className="dot_hover_element flex_items">
+                <small>Sold Product</small>
+                <small>For Fun</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="projects__body__container__left__card__body__specs small_visible">
+          <p className="header_p">offered Working type</p>
+          <div
+            className="projects__body__container__left__card__body__specs__desc"
+            style={{ display: "inline-block" }}
+          >
+            <span style={{ display: "inline-block" }}>Office</span>
+            <span style={{ display: "inline-block" }}>Remote</span>
+          </div>
+        </div>
+        <div className="projects__body__container__left__card__body__specs small_visible">
+          <p className="header_p">USED Languages</p>
+          <div
+            className="projects__body__container__left__card__body__specs__desc"
+            style={{ display: "inline-block" }}
+          >
+            <span style={{ display: "inline-block" }}>English</span>
+            <span style={{ display: "inline-block" }}>Polish</span>
+          </div>
+        </div>
+         {/* without exted data */}
+
+
+
+          {/* main content */}
           <div className="projects__body__container__left__card__body2__specs">
             <p>Sector Experience</p>
             <div className="projects__body__container__left__card__body2__specs__desc">
@@ -272,7 +364,7 @@ const Finapp = ({ title, project }) => {
           </div>
 
           <div className="projects__body__container__left__card__body2__specs">
-            <p>Sought personal assets</p>
+            <p>Personal Assets</p>
             <div className="projects__body__container__left__card__body2__specs__desc">
               <div className="projects__body__container__left__card__body__specs__desc">
                 {personalAssetsList
@@ -285,7 +377,7 @@ const Finapp = ({ title, project }) => {
           </div>
 
           <div className="projects__body__container__left__card__body2__specs">
-            <p>Project deadline</p>
+            <p>Accepted Deadline</p>
             <div className="projects__body__container__left__card__body2__specs__desc">
               <span style={{ display: "inline-block" }}>
                 {acceptedDeadline[0]}
@@ -313,33 +405,31 @@ const Finapp = ({ title, project }) => {
           </div>
 
           <div className="projects__body__container__left__card__body2__specs">
-            <p>Biz or tech position</p>
+            <p>Biz or Tech</p>
             <div className="projects__body__container__left__card__body2__specs__desc">
               <span
                 style={{
                   backgroundColor: "transparent",
                   display: "inline-block",
-                  maxWidth: "76px",
                 }}
               >
-                Business like
+                bizLike
               </span>
               <span style={{ display: "inline-block" }}>{bizOrTech[0]}%</span>
               <span
                 style={{
                   backgroundColor: "transparent",
                   display: "inline-block",
-                  maxWidth: "76px",
                 }}
               >
-                Technical like
+                techLike
               </span>
               <span style={{ display: "inline-block" }}>{bizOrTech[1]}%</span>
             </div>
           </div>
 
           <div className="projects__body__container__left__card__body2__specs">
-            <p>sought availability</p>
+            <p>Availability</p>
             <div className="projects__body__container__left__card__body2__specs__desc">
               <span style={{ display: "inline-block" }}>{availability[0]}</span>
               <span
@@ -358,15 +448,17 @@ const Finapp = ({ title, project }) => {
                   display: "inline-block",
                 }}
               >
-                hours weekly
+                h/week
               </span>
             </div>
           </div>
 
           <div className="projects__body__container__left__card__body2__specs">
-            <p>project base location</p>
+            <p>Location</p>
             <div className="projects__body__container__left__card__body2__specs__desc">
-              <span>{location[0]}</span>
+              <span>
+                {location[0]}, {location[1]}
+              </span>
             </div>
           </div>
         </div>

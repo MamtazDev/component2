@@ -9,7 +9,7 @@ import rightarrow from "../../icons/right.png";
 import { Link } from "react-router-dom";
 const Page1 = () => {
   return (
-    <div>
+    <div >
       <div className="right_arrow_div page1">
         <button className="arrow_btn">
           <Link to="/project2">
@@ -18,7 +18,7 @@ const Page1 = () => {
           </Link>
         </button>
       </div>
-      <div className="page1_component">
+      <div className="page1_component" >
         <div>
           <ProjectName />
           <Component />
@@ -28,7 +28,15 @@ const Page1 = () => {
           <AreaOfExperties />
         </div>
       </div>
-      <div className="buttons_container1">
+      {/*       <div className="right_arrow_div_mobile ">
+        <button className="arrow_btn">
+          <Link to="/project2">
+            {" "}
+            <img src={rightarrow} alt="" />
+          </Link>
+        </button>
+      </div> */}
+      <div className="buttons_container">
         <div>
           <button className="submit_btn">Submit</button>
           <div className="circle_yellow_buttons">
