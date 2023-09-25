@@ -689,7 +689,15 @@ p {
     }
 
     .page1_component {
-        margin-top: 30% !important;
+        margin-top: 20% !important;
+
+    }
+    .page2_component {
+        margin-top: 20% !important;
+
+    }
+    .page3_component {
+        margin-top: 20% !important;
 
     }
 
