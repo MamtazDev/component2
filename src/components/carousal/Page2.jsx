@@ -14,14 +14,14 @@ const Page2 = () => {
           <div className="right_arrow_div2">
             <button className="arrow_btn">
               <Link to="/project3">
-                <img src={rightarrow} alt="" />
+              <i class="fa-solid fa-chevron-right right_arrow_icon"></i>
               </Link>
             </button>
           </div>
           <div className="left_arrow_div2">
             <button className="arrow_btn">
               <Link to="/project">
-                <img src={leftarrow} alt="" />
+              <i class="fa-solid fa-chevron-left right_arrow_icon"></i>
               </Link>
             </button>
           </div>
@@ -38,14 +38,14 @@ const Page2 = () => {
             <div>
               <button className="arrow_btn">
                 <Link to="/project">
-                  <img src={leftarrow} alt="" />
+                <i class="fa-solid fa-chevron-left right_arrow_icon"></i>
                 </Link>
               </button>
             </div>
             <div>
               <button className="arrow_btn">
                 <Link to="/project3">
-                  <img src={rightarrow} alt="" />
+                <i class="fa-solid fa-chevron-right right_arrow_icon"></i>
                 </Link>
               </button>
             </div>

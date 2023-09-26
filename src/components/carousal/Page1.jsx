@@ -7,14 +7,14 @@ import ProjectExperience from "./ProjectExperience";
 import AreaOfExperties from "./AreaOfExperties";
 import rightarrow from "../../icons/right.png";
 import { Link } from "react-router-dom";
+import {BsChevronRight} from 'react-icons/bs'
 const Page1 = () => {
   return (
     <div>
       <div className="right_arrow_div page1 desktop_right_arrow">
         <button className="arrow_btn">
           <Link to="/project2">
-            {" "}
-            <img src={rightarrow} alt="" />
+            <i class="fa-solid fa-chevron-right right_arrow_icon"></i>
           </Link>
         </button>
       </div>

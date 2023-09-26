@@ -13,7 +13,7 @@ const Page2 = () => {
         <div className="left_arrow_div desktop_icons">
           <button className="arrow_btn">
             <Link to="/project2">
-              <img src={leftarrow} alt="" />
+              <i class="fa-solid fa-chevron-left right_arrow_icon"></i>
             </Link>
           </button>
         </div>
@@ -26,7 +26,7 @@ const Page2 = () => {
           <div className="page3_left_icon">
             <button className="arrow_btn">
               <Link to="/project2">
-                <img src={leftarrow} alt="" />
+                <i class="fa-solid fa-chevron-left right_arrow_icon"></i>
               </Link>
             </button>
           </div>

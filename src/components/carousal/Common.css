@@ -27,7 +27,16 @@ p {
     right: 20%;
     top: 40%;
 }
+.right_arrow_icon{
+    width: 65.5px;
+    height: 66.5px;
+    color: #ffb849;
+    font-size: 70px !important;
+}
+.right_arrow_icon:hover{
+   color: #f3b85a;
 
+}
 .right_arrow_div2 {
     max-width: 65px;
     height: 133px;
@@ -711,7 +720,7 @@ p {
     justify-content: center;
 }
 
-@media(max-width:768px) {
+@media(max-width:860px) {
     .projects__body__container__left__card__body {
         margin-top: 30px !important;
     }
