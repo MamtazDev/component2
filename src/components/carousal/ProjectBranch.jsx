@@ -71,7 +71,7 @@ export default function ProjectBranch() {
           ></i>
         </div>
         {show && (
-          <div>
+          <div className="show_component">
             <input
               type="text"
               className="search_input"

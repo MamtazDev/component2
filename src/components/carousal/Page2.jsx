@@ -26,7 +26,6 @@ const Page2 = () => {
             </button>
           </div>
         </div>
-
         {/* icons */}
         <div className="page2_component">
           <div className="">
@@ -36,14 +35,14 @@ const Page2 = () => {
             <OfferedWorkingType />
           </div>
           <div className=" page2_icons_mobile">
-            <div className="">
+            <div>
               <button className="arrow_btn">
                 <Link to="/project">
                   <img src={leftarrow} alt="" />
                 </Link>
               </button>
             </div>
-            <div className="">
+            <div>
               <button className="arrow_btn">
                 <Link to="/project3">
                   <img src={rightarrow} alt="" />
@@ -56,9 +55,6 @@ const Page2 = () => {
         <div className="buttons_container">
           <button className="submit_btn1">Submit</button>
           <div className="circle_yellow_buttons">
-            {/* <div className="inactive_yellow_circle"></div>
-            <div className="active_yellow_circle"></div>
-            <div className="inactive_yellow_circle"></div> */}
             <Link to="/project">
               <div type="button" className="inactive_yellow_circle"></div>
             </Link>

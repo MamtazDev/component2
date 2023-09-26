@@ -71,7 +71,7 @@ export default function Component() {
           ></i>
         </div>
         {show && (
-          <div>
+          <div className="show_component1">
             <input
               type="text"
               className="search_input"
