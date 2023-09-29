@@ -8,9 +8,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.home_margin{
+
+.home_margin {
   margin: 100px !important;
 }
+
 .container {
   max-width: 1577px !important;
   margin-left: auto;
@@ -250,7 +252,25 @@ code {
   .projects__body__container__left__card__body2__specs__desc {
     margin-top: 4px !important;
   }
-  .home_margin{
+
+  .home_margin {
     margin: 0px !important;
+  }
+
+}
+
+@media(min-width:867px) and (max-width:984px) {
+  .projects__body__container__left__card__body {
+    margin-top: 35px !important;
+  }
+}
+
+@media(min-width:1360px) and (max-width:1503px) {
+  .projects__body__container__left__card__body__specs {
+    margin-right: 10px !important;
+  }
+
+  .dot_container {
+    margin-right: -36px;
   }
 }
