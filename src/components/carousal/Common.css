@@ -88,7 +88,7 @@ p {
     justify-content: center;
     align-items: center;
     gap: 8px;
-    margin-top: 43px;
+    margin-top: 29px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -204,9 +204,9 @@ p {
     height: 50px !important;
 }
 
-.set_height {
+/* .set_height {
     min-height: 70px !important;
-}
+} */
 
 .set_border {
     border: 2px solid #F00;
@@ -284,6 +284,10 @@ p {
     border-radius: 10px;
     border: 2px solid #F00;
     background: #FFF;
+}
+.search_input1::placeholder{
+    color: #000;
+    font-size: 14px;
 }
 
 .search_input:focus {

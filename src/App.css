@@ -439,6 +439,7 @@ input[type="number"] {
   font-style: normal;
   font-weight: 500 !important;
   line-height: 17px;
+  text-transform: initial !important;
   /* 121.429% */
 
 }
@@ -861,6 +862,15 @@ input[type="number"] {
 }
 
 @media (max-width: 768px) {
+  .projects__body__container__left__card {
+    margin: 30px 20px;
+  }
+  .projects__body__container__left__card__top{
+/* display: flex;
+flex-direction: column;
+justify-content: start; */
+  }
+
   .addProject__container__totalExp__main {
     display: unset;
     justify-content: unset;
